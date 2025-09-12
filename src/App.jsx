@@ -1,20 +1,21 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
 import HomePage from "./pages/HomePage";
+import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
 
-// Minimal app shell. We'll grow this with Paragon / frontend-platform later.
+// Main app with routing and layout
 export default function App() {
   return (
     <BrowserRouter>
-      <header style={{ padding: "12px 16px", borderBottom: "1px solid #eee" }}>
-        <Link to="/" style={{ fontWeight: 700, textDecoration: "none" }}>
-          nextere
-        </Link>
-      </header>
-
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-      </Routes>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/register" element={<RegisterPage />} />
+        </Routes>
+      </Layout>
     </BrowserRouter>
   );
 }
