@@ -33,7 +33,7 @@ export default function Layout({ children }) {
               color: "#1d4ed8"
             }}
           >
-            nextere
+            Next frontend
           </Link>
           
           <nav style={{ display: "flex", gap: "24px", alignItems: "center" }}>
