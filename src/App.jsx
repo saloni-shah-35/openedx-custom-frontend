@@ -8,7 +8,6 @@ import RegisterPage from "./pages/RegisterPage";
 // Main app with routing and layout
 export default function App() {
   return (
-    <BrowserRouter>
       <Layout>
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -16,6 +15,5 @@ export default function App() {
           <Route path="/register" element={<RegisterPage />} />
         </Routes>
       </Layout>
-    </BrowserRouter>
   );
 }
