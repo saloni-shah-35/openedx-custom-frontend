@@ -4,6 +4,6 @@ import { BrowserRouter } from 'react-router-dom';
 import App from "./App";
 
 const root = createRoot(document.getElementById("root"));
-root.render(<BrowserRouter basename="/">
+root.render(<BrowserRouter basename="/landing">
     <App />
   </BrowserRouter>);
